@@ -1,11 +1,11 @@
 @font-face {
   font-family: "BrauerNeue";
-  src: url(../../fonts/BrauerNeueVN-Bold.woff2);
+  src: url(../fonts/BrauerNeueVN-Bold.woff2);
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url(../../fonts/Montserrat-Regular.woff2);
+  src: url(../fonts/Montserrat-Regular.woff2);
 }
 
 * {
@@ -41,7 +41,7 @@ a {
 
 .header {
   position: relative;
-  background-image: url(../../images/banner-background.svg);
+  background-image: url(../images/banner-background.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -199,7 +199,14 @@ a {
   width: 100%;
   position: absolute;
   left: 0;
+}
+
+.feedback__wave.top {
   bottom: 100%;
+}
+
+.feedback__wave.bottom {
+  top: 100%;
 }
 
 .feedback__wave img {
@@ -225,7 +232,7 @@ a {
 .feedback .icon-butterfly {
   width: 400px;
   position: absolute;
-  bottom: 150px;
+  bottom: 40px;
   left: -60px;
   z-index: 5;
 }

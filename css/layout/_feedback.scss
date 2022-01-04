@@ -7,7 +7,13 @@
     width: 100%;
     position: absolute;
     left: 0;
-    bottom: 100%;
+
+    &.top {
+      bottom: 100%;
+    }
+    &.bottom {
+      top: 100%;
+    }
     img {
       width: 100%;
     }
@@ -28,7 +34,7 @@
   .icon-butterfly {
     width: 400px;
     position: absolute;
-    bottom: 150px;
+    bottom: 40px;
     left: -60px;
     z-index: 5;
     .smoke__vector {
