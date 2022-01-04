@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "BrauerNeue";
+  src: url(../../fonts/BrauerNeueVN-Bold.woff2);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../fonts/Montserrat-Regular.woff2);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "BrauerNeue";
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  position: relative;
+  background-image: url(../../images/banner-background.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  height: calc(100vh);
+}
+
+.header__top {
+  padding-top: 40px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.header__top--menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__top--menu--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__top--menu--list li {
+  margin: 0 4px;
+  padding: 16px;
+  position: relative;
+}
+
+.header__top--menu--list li:first-child {
+  margin-left: 0;
+}
+
+.header__top--menu--list li:last-child {
+  margin-right: 0;
+}
+
+.header__top--menu--list li:hover {
+  background-color: #ffffff;
+  border-radius: 8px 8px 0 0;
+}
+
+.header__top--menu--list li:hover a {
+  color: #2576b9;
+}
+
+.header__top--menu--list li:hover .sub__menu {
+  visibility: visible;
+}
+
+.header__top--menu--list li a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+}
+
+.header__top--menu--list li .sub__menu {
+  background-color: #ffffff;
+  z-index: 5;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: 100%;
+  min-height: 100px;
+  visibility: hidden;
+  left: 0;
+  top: 102%;
+  border-radius: 0 8px 8px 8px;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.header__top--menu--list li .sub__menu li {
+  padding: 16px;
+  margin: 0;
+  width: 100%;
+}
+
+.header__top--menu--list li .sub__menu li:hover {
+  background-color: #e3f0f9;
+}
+
+.header__top--menu--list li .sub__menu li:hover a {
+  color: #2576b9;
+}
+
+.header__top--menu--list li .sub__menu li a {
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.15px;
+  color: #263238;
+}
+
+.header__top--menu--list li .sub__menu li a.special {
+  color: #e94286;
+}
+
+.header__top--menu a.header__top--btn {
+  border: 1px solid #ffd95c;
+  padding: 12px 24px;
+  border-radius: 100px;
+  background-color: #ffd95c;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.15px;
+  color: #2576b9;
+}
+/*# sourceMappingURL=style.css.map */

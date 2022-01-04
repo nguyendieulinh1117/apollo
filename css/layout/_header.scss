@@ -1,0 +1,104 @@
+.header {
+  position: relative;
+  background-image: url(../../images/banner-background.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  height: calc(100vh);
+  &__top {
+    padding-top: 40px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    &--menu {
+      display: flex;
+      &--list {
+        display: flex;
+        li {
+          margin: 0 4px;
+          padding: 16px;
+          position: relative;
+          &:first-child {
+            margin-left: 0;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+          &:hover {
+            background-color: $white__color;
+            border-radius: 8px 8px 0 0;
+            a {
+              color: $primary__color;
+            }
+            .sub__menu {
+              visibility: visible;
+            }
+          }
+          a {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 140%;
+            letter-spacing: 0.15px;
+            color: $white__color;
+          }
+          .sub__menu {
+            background-color: $white__color;
+            z-index: 5;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: max-content;
+            min-width: 100%;
+            min-height: 100px;
+            visibility: hidden;
+            left: 0;
+            top: 102%;
+            border-radius: 0 8px 8px 8px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            li {
+              padding: 16px;
+              margin: 0;
+              width: 100%;
+
+              &:hover {
+                background-color: $light--blue__color;
+                a {
+                  color: $primary__color;
+                }
+              }
+              a {
+                font-weight: bold;
+                font-size: 16px;
+                letter-spacing: 0.15px;
+                color: $blue--gray--900__color;
+                &.special {
+                  color: $pink__color;
+                }
+              }
+            }
+          }
+        }
+      }
+      a.header__top--btn {
+        border: 1px solid $secondary__color;
+        padding: 12px 24px;
+        border-radius: 100px;
+        background-color: $secondary__color;
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 140%;
+        letter-spacing: 0.15px;
+        color: $primary__color;
+      }
+    }
+  }
+  &__banner {
+  }
+}
