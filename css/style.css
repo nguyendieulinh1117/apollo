@@ -20,6 +20,10 @@ body {
   position: relative;
 }
 
+.container {
+  max-width: 1200px;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -232,7 +236,7 @@ a {
 .feedback .icon-butterfly {
   width: 400px;
   position: absolute;
-  bottom: 40px;
+  bottom: 28px;
   left: -60px;
   z-index: 5;
 }
