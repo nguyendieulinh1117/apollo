@@ -34,6 +34,15 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 .title {
   font-style: normal;
   font-weight: bold;
@@ -195,7 +204,7 @@ a {
 .feedback {
   position: relative;
   background-color: #bcdaf2;
-  padding-top: 72px;
+  padding: 72px 0;
   min-height: 600px;
 }
 
@@ -292,13 +301,30 @@ a {
   margin: auto;
 }
 
+.feedback__main--box {
+  margin-bottom: 48px;
+}
+
+.feedback__main--box .btn-arrow {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+
+.feedback__main--box .btn-arrow.btn-prev {
+  left: -32.5px;
+  -webkit-transform: translateX(-32.5px);
+          transform: translateX(-32.5px);
+}
+
+.feedback__main--box .btn-arrow.btn-next {
+  right: -32.5px;
+  -webkit-transform: translateX(32.5px);
+          transform: translateX(32.5px);
+}
+
 .feedback__main--box--item {
   width: 100%;
-  height: 256px;
-  -webkit-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-  border-radius: 16px;
-  background-color: #ffffff;
   position: relative;
   overflow: visible;
 }
@@ -307,7 +333,7 @@ a {
   position: absolute;
   left: 3%;
   width: 100px;
-  top: -15%;
+  top: 0;
 }
 
 .feedback__main--box--item .quote img {
@@ -315,6 +341,12 @@ a {
 }
 
 .feedback__main--box--item .content {
+  min-height: 256px;
+  margin-top: 30px;
+  -webkit-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  background-color: #ffffff;
   padding: 72px 32px;
   font-family: "Montserrat";
   text-align: center;
@@ -326,7 +358,140 @@ a {
   letter-spacing: 0.25px;
 }
 
+.feedback__main--nav .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feedback__main--nav .slick-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feedback__main--nav--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feedback__main--nav--item.slick-center .circle__img {
+  width: 208px;
+  border-radius: 50%;
+  border: 8px solid #2576b9;
+}
+
+.feedback__main--nav--item.slick-center .local {
+  display: block;
+}
+
+.feedback__main--nav--item.slick-center .name {
+  display: block;
+}
+
+.feedback__main--nav--item .circle__img {
+  width: 128px;
+}
+
+.feedback__main--nav--item .circle__img img {
+  width: 100%;
+}
+
+.feedback__main--nav--item .name {
+  text-align: center;
+  font-family: "BrauerNeue";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 120%;
+  color: #2576b9;
+  margin-bottom: 4px;
+  margin-top: 16px;
+  display: none;
+  overflow: visible;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.feedback__main--nav--item .local {
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.25px;
+  color: #2576b9;
+  display: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  overflow: visible;
+}
+
+.feedback__main--nav .slick-center {
+  width: 245px;
+}
+
 .vision {
   padding-top: 150px;
+  overflow: hidden;
+}
+
+.vision__line {
+  width: 92%;
+  max-width: 1333px;
+  position: relative;
+  margin-left: auto;
+}
+
+.vision__line .line img {
+  width: 100%;
+}
+
+.vision__line .icon-rocket {
+  position: absolute;
+  width: 10%;
+  top: -15%;
+  right: 95%;
+  -webkit-transform: rotate(7deg);
+          transform: rotate(7deg);
+  opacity: 1;
+  z-index: 5;
+}
+
+.vision__line .bg--white__line {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  background-color: #ffffff;
+  top: -14%;
+  right: 96%;
+  z-index: -1;
+}
+
+.vision__line .icon-balloon {
+  position: absolute;
+  top: -2%;
+  right: 12%;
+  width: 10%;
+  z-index: 4;
+}
+
+.vision__line .icon-balloon img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

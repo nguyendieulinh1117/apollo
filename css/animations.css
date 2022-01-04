@@ -32,11 +32,23 @@
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+.delay-100 {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -o-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
 .delay-250 {
   -webkit-animation-delay: 0.25s;
   -moz-animation-delay: 0.25s;
   -o-animation-delay: 0.25s;
   animation-delay: 0.25s;
+}
+.delay-400 {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  -o-animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 .delay-500 {
   -webkit-animation-delay: 0.5s;
@@ -1863,4 +1875,192 @@
   animation-name: hiddenBackground;
   animation-duration: 2s;
   animation-delay: 0.1s;
+}
+@keyframes rocketEffect {
+  0% {
+    top: 77%;
+    right: -120px;
+    transform: rotate(19deg);
+  }
+  10% {
+    top: 2%;
+    right: 10%;
+    transform: rotate(-5deg);
+  }
+  15% {
+    top: -8%;
+    right: 15%;
+    transform: rotate(-13deg);
+  }
+  20% {
+    top: -14%;
+    right: 20%;
+    transform: rotate(-19deg);
+  }
+  25% {
+    top: -18%;
+    right: 25%;
+    transform: rotate(-25deg);
+  }
+  30% {
+    top: -21%;
+    right: 30%;
+    transform: rotate(-30deg);
+  }
+  40% {
+    top: -18%;
+    right: 40%;
+    transform: rotate(-39deg);
+  }
+  50% {
+    top: -10%;
+    right: 50%;
+    transform: rotate(-48deg);
+  }
+  60% {
+    top: 2%;
+    right: 60%;
+    transform: rotate(-48deg);
+  }
+  75% {
+    top: 12%;
+    right: 70%;
+    transform: rotate(-41deg);
+  }
+  80% {
+    top: 14%;
+    right: 80%;
+    transform: rotate(-27deg);
+  }
+  85% {
+    top: 10%;
+    right: 85%;
+    transform: rotate(-16deg);
+  }
+  90% {
+    top: 1%;
+    right: 90%;
+    transform: rotate(-4deg);
+  }
+  95% {
+    top: -9%;
+    right: 95%;
+    transform: rotate(2deg);
+  }
+  100% {
+    top: -15%;
+    right: 95%;
+    transform: rotate(7deg);
+    opacity: 1;
+  }
+}
+.rocketEffect {
+  top: -14%;
+  right: 96%;
+  transform: rotate(7deg);
+}
+.rocketEffect.go {
+  animation: rocketEffect 2s linear;
+
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+@keyframes lineEffect {
+  0% {
+    top: 77%;
+    right: -120px;
+  }
+  10% {
+    top: 2%;
+    right: 10%;
+  }
+  15% {
+    top: -8%;
+    right: 15%;
+  }
+  20% {
+    top: -14%;
+    right: 20%;
+  }
+  25% {
+    top: -18%;
+    right: 25%;
+  }
+  30% {
+    top: -21%;
+    right: 30%;
+  }
+  40% {
+    top: -18%;
+    right: 40%;
+  }
+  50% {
+    top: -10%;
+    right: 50%;
+  }
+  60% {
+    top: 2%;
+    right: 60%;
+  }
+  75% {
+    top: 12%;
+    right: 70%;
+  }
+  80% {
+    top: 14%;
+    right: 80%;
+  }
+  85% {
+    top: 10%;
+    right: 85%;
+  }
+  90% {
+    top: 1%;
+    right: 90%;
+  }
+  95% {
+    top: -9%;
+    right: 95%;
+  }
+  100% {
+    top: -15%;
+    right: 95%;
+  }
+}
+.lineEffect {
+  top: -14%;
+  right: 96%;
+}
+.lineEffect.go {
+  animation: lineEffect 2s linear;
+}
+
+@keyframes balloonEffect {
+  0% {
+    transform: rotate(0);
+  }
+  10%,
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: rotate(3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.balloonEffect {
+  transform: rotate(0);
+}
+.balloonEffect.go {
+  animation: balloonEffect 1s;
+  animation-fill-mode: both;
 }
