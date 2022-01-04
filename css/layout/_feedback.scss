@@ -1,0 +1,66 @@
+.feedback {
+  position: relative;
+  background-color: $primary-100__color;
+  padding-top: 72px;
+  min-height: 600px;
+  &__wave {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  &__title {
+    position: relative;
+    .icon-meteor {
+      position: absolute;
+      left: 8%;
+      top: 50%;
+    }
+    .icon-star {
+      position: absolute;
+      right: 8%;
+      top: 50%;
+    }
+  }
+  .icon-butterfly {
+    width: 400px;
+    position: absolute;
+    bottom: 150px;
+    left: -60px;
+    z-index: 5;
+    .smoke__vector {
+      position: relative;
+      width: 100%;
+      img {
+        width: 100%;
+        position: absolute;
+        left: -125px;
+        z-index: 1;
+      }
+      &--hidden {
+        position: absolute;
+        height: 160px;
+        background-color: $primary-100__color;
+        right: 20%;
+        top: -61px;
+        width: 0%;
+        z-index: 2;
+      }
+    }
+    .butterfly__vector {
+      width: 100%;
+      position: relative;
+      img {
+        position: absolute;
+
+        z-index: 3;
+        width: 15%;
+        right: 20%;
+        top: -35px;
+      }
+    }
+  }
+}

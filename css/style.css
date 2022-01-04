@@ -17,6 +17,7 @@
 
 body {
   font-family: "BrauerNeue";
+  position: relative;
 }
 
 ul {
@@ -29,6 +30,15 @@ a {
   text-decoration: none;
 }
 
+.title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 54px;
+  color: #2576b9;
+  text-align: center;
+}
+
 .header {
   position: relative;
   background-image: url(../../images/banner-background.svg);
@@ -36,13 +46,14 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 500px;
-  height: calc(100vh);
+  height: calc(100vh + 130px);
 }
 
 .header__top {
   padding-top: 40px;
   width: 100%;
-  position: fixed;
+  position: absolute;
+  z-index: 2;
   top: 0;
   left: 0;
 }
@@ -162,5 +173,95 @@ a {
   line-height: 140%;
   letter-spacing: 0.15px;
   color: #2576b9;
+}
+
+.header__banner {
+  padding-top: 15vh;
+}
+
+.header__banner--item--img {
+  margin: auto;
+  width: 80vh;
+}
+
+.header__banner--item--img img {
+  width: 100%;
+}
+
+.feedback {
+  position: relative;
+  background-color: #bcdaf2;
+  padding-top: 72px;
+  min-height: 600px;
+}
+
+.feedback__wave {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+}
+
+.feedback__wave img {
+  width: 100%;
+}
+
+.feedback__title {
+  position: relative;
+}
+
+.feedback__title .icon-meteor {
+  position: absolute;
+  left: 8%;
+  top: 50%;
+}
+
+.feedback__title .icon-star {
+  position: absolute;
+  right: 8%;
+  top: 50%;
+}
+
+.feedback .icon-butterfly {
+  width: 400px;
+  position: absolute;
+  bottom: 150px;
+  left: -60px;
+  z-index: 5;
+}
+
+.feedback .icon-butterfly .smoke__vector {
+  position: relative;
+  width: 100%;
+}
+
+.feedback .icon-butterfly .smoke__vector img {
+  width: 100%;
+  position: absolute;
+  left: -125px;
+  z-index: 1;
+}
+
+.feedback .icon-butterfly .smoke__vector--hidden {
+  position: absolute;
+  height: 160px;
+  background-color: #bcdaf2;
+  right: 20%;
+  top: -61px;
+  width: 0%;
+  z-index: 2;
+}
+
+.feedback .icon-butterfly .butterfly__vector {
+  width: 100%;
+  position: relative;
+}
+
+.feedback .icon-butterfly .butterfly__vector img {
+  position: absolute;
+  z-index: 3;
+  width: 15%;
+  right: 20%;
+  top: -35px;
 }
 /*# sourceMappingURL=style.css.map */

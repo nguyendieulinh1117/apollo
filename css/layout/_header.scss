@@ -5,11 +5,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 500px;
-  height: calc(100vh);
+  height: calc(100vh + 130px);
   &__top {
     padding-top: 40px;
     width: 100%;
-    position: fixed;
+    position: absolute;
+    z-index: 2;
     top: 0;
     left: 0;
     &--menu {
@@ -100,5 +101,15 @@
     }
   }
   &__banner {
+    padding-top: 15vh;
+    &--item {
+      &--img {
+        margin: auto;
+        width: 80vh;
+        img {
+          width: 100%;
+        }
+      }
+    }
   }
 }
