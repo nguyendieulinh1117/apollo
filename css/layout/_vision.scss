@@ -73,11 +73,13 @@
           text-transform: uppercase;
           letter-spacing: 0.25px;
           color: $blue--gray--300__color;
+          cursor: pointer;
           &.active {
             color: $primary__color;
           }
         }
         .vision__content {
+          position: relative;
           margin-top: 24px;
           font-style: normal;
           font-weight: bold;
@@ -85,8 +87,66 @@
           line-height: 48px;
           letter-spacing: 0.25px;
           color: $primary__color;
-          text-shadow: 3px 3px 0 $secondary__color,
-            -3px -3px 0 $secondary__color;
+          text-shadow: $secondary__color 9px 0px, $secondary__color 8.5px 0.5px,
+            $secondary__color 8px 1px, $secondary__color 7.5px 1.5px,
+            $secondary__color 7px 2px, $secondary__color 6.5px 2.5px,
+            $secondary__color 6px 3px, $secondary__color 5.5px 3.5px,
+            $secondary__color 5px 4px, $secondary__color 4.5px 4.5px,
+            $secondary__color 4px 5px, $secondary__color 3.5px 5.5px,
+            $secondary__color 3px 6px, $secondary__color 2.5px 6.5px,
+            $secondary__color 2px 7px, $secondary__color 1.5px 7.5px,
+            $secondary__color 1px 8px, $secondary__color 0.5px 8.5px,
+            $secondary__color 8.75px 0.25px, $secondary__color 8.25px 0.75px,
+            $secondary__color 7.75px 1.25px, $secondary__color 7.25px 1.75px,
+            $secondary__color 6.75px 2.25px, $secondary__color 6.25px 2.75px,
+            $secondary__color 5.75px 3.25px, $secondary__color 5.25px 3.75px,
+            $secondary__color 4.75px 4.25px, $secondary__color 4.25px 4.75px,
+            $secondary__color 3.75px 5.25px, $secondary__color 3.25px 5.75px,
+            $secondary__color 2.75px 6.25px, $secondary__color 2.25px 6.75px,
+            $secondary__color 1.75px 7.25px, $secondary__color 1.25px 7.75px,
+            $secondary__color 0.75px 8.25px, $secondary__color 0.25px 8.75px,
+            $secondary__color 0.5px 8.5px, $secondary__color -0.5px 8.5px,
+            $secondary__color -1px 8px, $secondary__color -1.5px 7.5px,
+            $secondary__color -2px 7px, $secondary__color -2.5px 6.5px,
+            $secondary__color -3px 6px, $secondary__color -3.5px 5.5px,
+            $secondary__color -4px 5px, $secondary__color -4.5px 4.5px,
+            $secondary__color -5px 4px, $secondary__color -5.5px 3.5px,
+            $secondary__color -6px 3px, $secondary__color -6.5px 2.5px,
+            $secondary__color -7px 2px, $secondary__color -7.5px 1.5px,
+            $secondary__color -8px 1px, $secondary__color -8.5px 0.5px,
+            $secondary__color -0.25px 8.75px, $secondary__color -0.75px 8.25px,
+            $secondary__color -1.25px 7.75px, $secondary__color -1.75px 7.25px,
+            $secondary__color -2.25px 6.75px, $secondary__color -2.75px 6.25px,
+            $secondary__color -3.25px 5.75px, $secondary__color -3.75px 5.25px,
+            $secondary__color -4.25px 4.75px, $secondary__color -4.75px 4.25px,
+            $secondary__color -5.25px 3.75px, $secondary__color -5.75px 3.25px,
+            $secondary__color -6.25px 2.75px, $secondary__color -6.75px 2.25px,
+            $secondary__color -7.25px 1.75px, $secondary__color -7.75px 1.25px,
+            $secondary__color -8.25px 0.75px, $secondary__color -8.75px 0.25px,
+            $secondary__color -8.75px -0.25px, $secondary__color -8.25px -0.75px,
+            $secondary__color -7.75px -1.25px, $secondary__color -7.25px -1.75px,
+            $secondary__color -6.75px -2.25px, $secondary__color -6.25px -2.75px,
+            $secondary__color -5.75px -3.25px, $secondary__color -5.25px -3.75px,
+            $secondary__color -4.75px -4.25px, $secondary__color -4.25px -4.75px,
+            $secondary__color -3.75px -5.25px, $secondary__color -3.25px -5.75px,
+            $secondary__color -2.75px -6.25px, $secondary__color -2.25px -6.75px,
+            $secondary__color -1.75px -7.25px, $secondary__color -1.25px -7.75px,
+            $secondary__color -0.75px -8.25px, $secondary__color -0.25px -8.75px,
+            $secondary__color 0.25px -8.75px, $secondary__color 0.75px -8.25px,
+            $secondary__color 1.25px -7.75px, $secondary__color 1.75px -7.25px,
+            $secondary__color 2.25px -6.75px, $secondary__color 2.75px -6.25px,
+            $secondary__color 3.25px -5.75px, $secondary__color 3.75px -5.25px,
+            $secondary__color 4.25px -4.75px, $secondary__color 4.75px -4.25px,
+            $secondary__color 5.25px -3.75px, $secondary__color 5.75px -3.25px,
+            $secondary__color 6.25px -2.75px, $secondary__color 6.75px -2.25px,
+            $secondary__color 7.25px -1.75px, $secondary__color 7.75px -1.25px,
+            $secondary__color 8.25px -0.75px, $secondary__color 8.75px -0.25px;
+
+          ul {
+            list-style: disc;
+            width: max-content;
+            padding-left: 35px;
+          }
         }
       }
     }
@@ -94,18 +154,108 @@
       width: 50%;
       padding-left: 40px;
       &--box {
-        max-width: 473px;
+        max-width: 472px;
         position: relative;
         margin: auto;
         display: flex;
         align-items: flex-end;
-        .box__background {
-          .bg-yellow {
-            background-color: $secondary__color;
-            width: 100%;
-            padding-bottom: 100%;
-            border-radius: 50%;
+        justify-content: center;
+        display: none;
+        &.active {
+          display: block;
+        }
+        &:nth-child(2) {
+          .box__img {
+            bottom: 10px;
           }
+          .i1 {
+            top: 40%;
+            left: -11%;
+            right: initial;
+            transform: rotate(-32.63deg);
+          }
+          .i2 {
+            top: 9%;
+            right: 78%;
+            transform: rotate(-6.41deg);
+          }
+          .i3 {
+            top: 3%;
+            right: -13%;
+            left: initial;
+            transform: rotate(-46.31deg);
+          }
+          .i4 {
+            bottom: -5%;
+            left: 34%;
+            transform: matrix(-1, 0.01, 0.08, 1, 0, 0);
+          }
+          .i5 {
+            bottom: 25%;
+            left: 91%;
+            transform: rotate(20.28deg);
+          }
+        }
+        &:nth-child(3) {
+          .i1 {
+            top: 10%;
+            right: -10%;
+            left: initial;
+          }
+          .i2 {
+            top: -7%;
+            right: 27%;
+            transform: rotate(22.55deg);
+          }
+          .i3 {
+            bottom: 14%;
+            right: -5%;
+            transform: matrix(0.7, -0.71, 0.71, 0.7, 0, 0);
+          }
+          .i4 {
+            bottom: -12%;
+            left: 15%;
+            transform: rotate(-25deg);
+          }
+          .i5 {
+            bottom: 5%;
+            left: -1%;
+            transform: rotate(-5.74deg);
+          }
+        }
+        &:nth-child(4) {
+          .i1 {
+            top: 10%;
+            left: -10px;
+            right: inherit;
+            transform: matrix(0.54, -0.84, 0.84, 0.54, 0, 0);
+          }
+          .i2 {
+            top: 10%;
+            right: 4%;
+            transform: matrix(0.56, 0.83, -0.83, 0.56, 0, 0);
+          }
+          .i3 {
+            bottom: -6%;
+            right: 14%;
+            transform: matrix(0.7, -0.71, 0.71, 0.7, 0, 0);
+          }
+          .i4 {
+            bottom: -8%;
+            left: 1%;
+          }
+          .i5 {
+            bottom: 25%;
+            left: -8%;
+            transform: matrix(1, -0.08, 0.08, 1, 0, 0);
+          }
+        }
+        .box__background {
+          background-color: $secondary__color;
+          width: 100%;
+          padding-bottom: 100%;
+          border-radius: 50%;
+          z-index: -1;
         }
         .box__img {
           position: absolute;
@@ -116,8 +266,46 @@
           align-items: flex-end;
           justify-content: center;
           img {
-            width: 80%;
+            width: 100%;
+            height: auto;
           }
+        }
+        .i1,
+        .i2,
+        .i3,
+        .i4,
+        .i5 {
+          position: absolute;
+          content: "";
+        }
+        .i1 {
+          top: -9%;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          width: 24%;
+          height: 24%;
+        }
+        .i2 {
+          top: 20%;
+          right: -2%;
+          width: 16.8%;
+        }
+        .i3 {
+          bottom: 32%;
+          right: -6%;
+          width: 22.2%;
+        }
+        .i4 {
+          bottom: -6%;
+          left: -4%;
+          width: 62.4%;
+        }
+        .i5 {
+          bottom: 25%;
+          left: -13%;
+          width: 16%;
+          z-index: 2;
         }
       }
     }
