@@ -1,13 +1,455 @@
 .journey {
-  padding-top: 150px;
+  overflow: hidden;
+
   &__title {
-    padding-top: 48px;
+    padding-top: 198px;
     position: relative;
+    overflow: hidden;
     .icon-global {
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 20%;
+      right: 5%;
       z-index: 3;
+    }
+    .icon-star-2 {
+      position: absolute;
+      z-index: 3;
+      top: 0;
+      right: 7%;
+    }
+  }
+  &__main {
+    margin-top: 36px;
+    .journey__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      &--tabs {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 70px;
+        li {
+          color: $primary__color;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          padding: 16px 32px;
+          cursor: pointer;
+          border: 1px solid $blue--gray--300__color;
+          border-radius: 40px;
+          min-width: 118px;
+          text-align: center;
+          position: relative;
+
+          &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-radius: 40px;
+            top: 0;
+            left: 0;
+            background-color: $white__color;
+            z-index: -1;
+          }
+          &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: $blue--gray--300__color;
+            left: 100%;
+            top: 50%;
+            z-index: -2;
+          }
+
+          &:last-child::after {
+            position: unset;
+          }
+          &.activeRightToLeft {
+            color: $secondary__color;
+            &::before {
+              background: linear-gradient(
+                to right,
+                $white__color 50%,
+                $primary__color 50%
+              );
+              background-size: 200% 100%;
+              background-position: right botom;
+              animation: activeRightToLeft 1s;
+              @keyframes activeRightToLeft {
+                0% {
+                  background-position: left bottom;
+                }
+                100% {
+                  background-position: right bottom;
+                }
+              }
+            }
+          }
+          &.activeLeftToRight {
+            color: $secondary__color;
+            &::before {
+              background: linear-gradient(
+                to right,
+                $primary__color 50%,
+                $white__color 50%
+              );
+              background-size: 200% 100%;
+              background-position: left botom;
+              animation: activeLeftToRight 1s;
+              @keyframes activeLeftToRight {
+                0% {
+                  background-position: right bottom;
+                }
+                100% {
+                  background-position: left bottom;
+                }
+              }
+            }
+          }
+          &.hiddenRightToLeft {
+            &::before {
+              background: linear-gradient(
+                to right,
+                $primary__color 50%,
+                $white__color 50%
+              );
+              background-size: 200% 100%;
+              background-position: right bottom;
+              animation: hiddenRightToLeft 1s;
+              @keyframes hiddenRightToLeft {
+                0% {
+                  background-position: left bottom;
+                }
+                100% {
+                  background-position: right bottom;
+                }
+              }
+            }
+          }
+          &.hiddenLeftToRight {
+            &::before {
+              background: linear-gradient(
+                to right,
+                $white__color 50%,
+                $primary__color 50%
+              );
+              background-size: 200% 100%;
+              background-position: left bottom;
+              animation: hiddenLeftToRight 1s;
+              @keyframes hiddenLeftToRight {
+                0% {
+                  background-position: right bottom;
+                }
+                100% {
+                  background-position: left bottom;
+                }
+              }
+            }
+          }
+        }
+      }
+      &--content {
+        width: 100%;
+        &--tab {
+          display: flex;
+          justify-content: space-between;
+          &.tab1 {
+            .icon-trophy {
+              top: 20%;
+              right: 2%;
+            }
+            .icon-star-3 {
+              top: -5%;
+              right: 28%;
+            }
+            .icon-bulb {
+              top: 0;
+              left: 6%;
+            }
+          }
+          &.tab2 {
+            .icon-trophy {
+              top: 65%;
+              right: 0%;
+            }
+            .icon-star-3 {
+              top: 2%;
+              right: 5%;
+            }
+            .icon-bulb {
+              top: 90px;
+              left: -2%;
+            }
+          }
+          &.tab3 {
+            .icon-trophy {
+              top: 65%;
+              right: 90%;
+
+              img {
+                transform: scaleX(-1);
+              }
+            }
+            .icon-star-3 {
+              top: 2%;
+              right: 80%;
+
+              img {
+                transform: scaleY(-1);
+              }
+            }
+            .icon-bulb {
+              top: 9px;
+              left: 75%;
+
+              img {
+                transform: scaleX(-1);
+              }
+            }
+          }
+          &.tab4 {
+            .icon-trophy {
+              top: 50%;
+              right: 90%;
+
+              img {
+                transform: scaleX(-1);
+              }
+            }
+            .icon-star-3 {
+              top: 0%;
+              right: 15%;
+
+              img {
+                transform: rotate(30deg) scaleY(-1);
+              }
+            }
+            .icon-bulb {
+              top: 70%;
+              left: 88%;
+
+              img {
+                transform: scaleX(-1);
+              }
+            }
+          }
+          &.tab5 {
+            .icon-trophy {
+              top: 50%;
+              right: 90%;
+
+              img {
+                transform: scaleX(-1);
+              }
+            }
+            .icon-star-3 {
+              top: 0%;
+              right: 15%;
+
+              img {
+                transform: rotate(30deg) scaleY(-1);
+              }
+            }
+            .icon-bulb {
+              top: 70%;
+              left: 88%;
+
+              img {
+                transform: scaleX(-1);
+              }
+            }
+          }
+          &.tab6 {
+            .icon-trophy {
+              top: 60%;
+              right: 90%;
+
+              img {
+                transform: scaleX(-1);
+              }
+            }
+            .icon-star-3 {
+              top: 4%;
+              right: 80%;
+
+              img {
+                transform: rotate(20deg) scaleY(-1);
+              }
+            }
+            .icon-bulb {
+              top: 40%;
+              left: 88%;
+
+              img {
+                transform: scaleX(-1);
+              }
+            }
+          }
+          &.tab7 {
+            .icon-trophy {
+              top: 40%;
+              left: 88%;
+            }
+            .icon-star-3 {
+              top: 4%;
+              right: 80%;
+
+              img {
+                transform: rotate(20deg) scaleY(-1);
+              }
+            }
+            .icon-bulb {
+              top: 60%;
+              right: 90%;
+            }
+          }
+
+          .wrapper-img {
+            width: 50%;
+            position: relative;
+            .content-img {
+              width: 100%;
+              position: relative;
+
+              img {
+                width: 100%;
+                height: auto;
+              }
+              .bg {
+                position: absolute;
+                content: "";
+                top: 2px;
+                left: 10px;
+                padding: 0 30px;
+                z-index: -1;
+                // width: 100%;
+              }
+            }
+            .icon-trophy,
+            .icon-star-3,
+            .icon-bulb {
+              position: absolute;
+              content: "";
+            }
+          }
+          .wrapper-content {
+            width: 45%;
+            .content--title {
+              font-style: normal;
+              font-weight: bold;
+              font-size: 48px;
+              line-height: 54px;
+              margin-bottom: 47px;
+              color: $white__color;
+              text-shadow: $light--pink__color 9px 0px,
+                $light--pink__color 8.5px 0.5px, $light--pink__color 8px 1px,
+                $light--pink__color 7.5px 1.5px, $light--pink__color 7px 2px,
+                $light--pink__color 6.5px 2.5px, $light--pink__color 6px 3px,
+                $light--pink__color 5.5px 3.5px, $light--pink__color 5px 4px,
+                $light--pink__color 4.5px 4.5px, $light--pink__color 4px 5px,
+                $light--pink__color 3.5px 5.5px, $light--pink__color 3px 6px,
+                $light--pink__color 2.5px 6.5px, $light--pink__color 2px 7px,
+                $light--pink__color 1.5px 7.5px, $light--pink__color 1px 8px,
+                $light--pink__color 0.5px 8.5px,
+                $light--pink__color 8.75px 0.25px,
+                $light--pink__color 8.25px 0.75px,
+                $light--pink__color 7.75px 1.25px,
+                $light--pink__color 7.25px 1.75px,
+                $light--pink__color 6.75px 2.25px,
+                $light--pink__color 6.25px 2.75px,
+                $light--pink__color 5.75px 3.25px,
+                $light--pink__color 5.25px 3.75px,
+                $light--pink__color 4.75px 4.25px,
+                $light--pink__color 4.25px 4.75px,
+                $light--pink__color 3.75px 5.25px,
+                $light--pink__color 3.25px 5.75px,
+                $light--pink__color 2.75px 6.25px,
+                $light--pink__color 2.25px 6.75px,
+                $light--pink__color 1.75px 7.25px,
+                $light--pink__color 1.25px 7.75px,
+                $light--pink__color 0.75px 8.25px,
+                $light--pink__color 0.25px 8.75px,
+                $light--pink__color 0.5px 8.5px,
+                $light--pink__color -0.5px 8.5px, $light--pink__color -1px 8px,
+                $light--pink__color -1.5px 7.5px, $light--pink__color -2px 7px,
+                $light--pink__color -2.5px 6.5px, $light--pink__color -3px 6px,
+                $light--pink__color -3.5px 5.5px, $light--pink__color -4px 5px,
+                $light--pink__color -4.5px 4.5px, $light--pink__color -5px 4px,
+                $light--pink__color -5.5px 3.5px, $light--pink__color -6px 3px,
+                $light--pink__color -6.5px 2.5px, $light--pink__color -7px 2px,
+                $light--pink__color -7.5px 1.5px, $light--pink__color -8px 1px,
+                $light--pink__color -8.5px 0.5px,
+                $light--pink__color -0.25px 8.75px,
+                $light--pink__color -0.75px 8.25px,
+                $light--pink__color -1.25px 7.75px,
+                $light--pink__color -1.75px 7.25px,
+                $light--pink__color -2.25px 6.75px,
+                $light--pink__color -2.75px 6.25px,
+                $light--pink__color -3.25px 5.75px,
+                $light--pink__color -3.75px 5.25px,
+                $light--pink__color -4.25px 4.75px,
+                $light--pink__color -4.75px 4.25px,
+                $light--pink__color -5.25px 3.75px,
+                $light--pink__color -5.75px 3.25px,
+                $light--pink__color -6.25px 2.75px,
+                $light--pink__color -6.75px 2.25px,
+                $light--pink__color -7.25px 1.75px,
+                $light--pink__color -7.75px 1.25px,
+                $light--pink__color -8.25px 0.75px,
+                $light--pink__color -8.75px 0.25px,
+                $light--pink__color -8.75px -0.25px,
+                $light--pink__color -8.25px -0.75px,
+                $light--pink__color -7.75px -1.25px,
+                $light--pink__color -7.25px -1.75px,
+                $light--pink__color -6.75px -2.25px,
+                $light--pink__color -6.25px -2.75px,
+                $light--pink__color -5.75px -3.25px,
+                $light--pink__color -5.25px -3.75px,
+                $light--pink__color -4.75px -4.25px,
+                $light--pink__color -4.25px -4.75px,
+                $light--pink__color -3.75px -5.25px,
+                $light--pink__color -3.25px -5.75px,
+                $light--pink__color -2.75px -6.25px,
+                $light--pink__color -2.25px -6.75px,
+                $light--pink__color -1.75px -7.25px,
+                $light--pink__color -1.25px -7.75px,
+                $light--pink__color -0.75px -8.25px,
+                $light--pink__color -0.25px -8.75px,
+                $light--pink__color 0.25px -8.75px,
+                $light--pink__color 0.75px -8.25px,
+                $light--pink__color 1.25px -7.75px,
+                $light--pink__color 1.75px -7.25px,
+                $light--pink__color 2.25px -6.75px,
+                $light--pink__color 2.75px -6.25px,
+                $light--pink__color 3.25px -5.75px,
+                $light--pink__color 3.75px -5.25px,
+                $light--pink__color 4.25px -4.75px,
+                $light--pink__color 4.75px -4.25px,
+                $light--pink__color 5.25px -3.75px,
+                $light--pink__color 5.75px -3.25px,
+                $light--pink__color 6.25px -2.75px,
+                $light--pink__color 6.75px -2.25px,
+                $light--pink__color 7.25px -1.75px,
+                $light--pink__color 7.75px -1.25px,
+                $light--pink__color 8.25px -0.75px,
+                $light--pink__color 8.75px -0.25px;
+            }
+            p {
+              font-family: $font-Montserrat;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 18px;
+              line-height: 28px;
+              letter-spacing: 0.25px;
+              color: $black__color;
+              margin: 32px 0;
+            }
+          }
+        }
+      }
     }
   }
 }

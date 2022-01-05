@@ -2064,3 +2064,20 @@
   animation: balloonEffect 1s;
   animation-fill-mode: both;
 }
+@keyframes globalEffect {
+  0% {
+    top: 65%;
+    right: -10%;
+  }
+  100% {
+    top: 20%;
+    right: 5%;
+  }
+}
+.globalEffect {
+  top: 65%;
+  right: -10%;
+}
+.globalEffect.go {
+  animation: globalEffect 1.5s ease-in-out;
+}
