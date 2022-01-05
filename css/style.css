@@ -602,10 +602,10 @@ h6 {
 }
 
 .vision__main--right--box:nth-child(2) .i2 {
-  top: 9%;
+  top: 3%;
   right: 78%;
-  -webkit-transform: rotate(-6.41deg);
-          transform: rotate(-6.41deg);
+  -webkit-transform: rotate(-20.41deg);
+          transform: rotate(-20.41deg);
 }
 
 .vision__main--right--box:nth-child(2) .i3 {
@@ -637,10 +637,10 @@ h6 {
 }
 
 .vision__main--right--box:nth-child(3) .i2 {
-  top: -7%;
+  top: -12%;
   right: 27%;
-  -webkit-transform: rotate(22.55deg);
-          transform: rotate(22.55deg);
+  -webkit-transform: rotate(2.25deg);
+          transform: rotate(2.25deg);
 }
 
 .vision__main--right--box:nth-child(3) .i3 {
@@ -665,7 +665,7 @@ h6 {
 }
 
 .vision__main--right--box:nth-child(4) .i1 {
-  top: 10%;
+  top: 5%;
   left: -10px;
   right: inherit;
   -webkit-transform: matrix(0.54, -0.84, 0.84, 0.54, 0, 0);
@@ -673,10 +673,10 @@ h6 {
 }
 
 .vision__main--right--box:nth-child(4) .i2 {
-  top: 10%;
+  top: 3%;
   right: 4%;
-  -webkit-transform: matrix(0.56, 0.83, -0.83, 0.56, 0, 0);
-          transform: matrix(0.56, 0.83, -0.83, 0.56, 0, 0);
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
 }
 
 .vision__main--right--box:nth-child(4) .i3 {
@@ -687,8 +687,8 @@ h6 {
 }
 
 .vision__main--right--box:nth-child(4) .i4 {
-  bottom: -8%;
-  left: 1%;
+  bottom: -5%;
+  left: 3%;
 }
 
 .vision__main--right--box:nth-child(4) .i5 {
@@ -768,5 +768,21 @@ h6 {
   left: -13%;
   width: 16%;
   z-index: 2;
+}
+
+.journey {
+  padding-top: 150px;
+}
+
+.journey__title {
+  padding-top: 48px;
+  position: relative;
+}
+
+.journey__title .icon-global {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
 }
 /*# sourceMappingURL=style.css.map */

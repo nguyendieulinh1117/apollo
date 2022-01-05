@@ -1,0 +1,13 @@
+.journey {
+  padding-top: 150px;
+  &__title {
+    padding-top: 48px;
+    position: relative;
+    .icon-global {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 3;
+    }
+  }
+}
