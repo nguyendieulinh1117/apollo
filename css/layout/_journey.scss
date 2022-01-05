@@ -158,12 +158,12 @@
           justify-content: space-between;
           &.tab1 {
             .icon-trophy {
-              top: 20%;
+              top: 17%;
               right: 2%;
             }
             .icon-star-3 {
               top: -5%;
-              right: 28%;
+              right: 25%;
             }
             .icon-bulb {
               top: 0;
@@ -172,138 +172,101 @@
           }
           &.tab2 {
             .icon-trophy {
-              top: 65%;
-              right: 0%;
+              top: 60%;
+              right: -5%;
             }
             .icon-star-3 {
               top: 2%;
-              right: 5%;
+              right: 0;
             }
             .icon-bulb {
               top: 90px;
-              left: -2%;
+              left: -6%;
             }
           }
           &.tab3 {
             .icon-trophy {
-              top: 65%;
-              right: 90%;
-
-              img {
-                transform: scaleX(-1);
-              }
+              top: 60%;
+              right: 96%;
+              transform: rotate(-49.28deg);
             }
             .icon-star-3 {
               top: 2%;
-              right: 80%;
-
-              img {
-                transform: scaleY(-1);
-              }
+              right: 85%;
+              transform: rotate(-106.71deg);
             }
             .icon-bulb {
-              top: 9px;
-              left: 75%;
-
-              img {
-                transform: scaleX(-1);
-              }
+              top: 0;
+              left: 78%;
+              transform: rotate(80.03deg);
             }
           }
           &.tab4 {
             .icon-trophy {
-              top: 50%;
-              right: 90%;
-
-              img {
-                transform: scaleX(-1);
-              }
+              top: 60%;
+              right: 96%;
+              transform: rotate(-49.28deg);
             }
             .icon-star-3 {
-              top: 0%;
-              right: 15%;
-
-              img {
-                transform: rotate(30deg) scaleY(-1);
-              }
+              top: 2%;
+              right: 85%;
+              transform: rotate(-106.71deg);
             }
             .icon-bulb {
-              top: 70%;
-              left: 88%;
-
-              img {
-                transform: scaleX(-1);
-              }
+              top: 0;
+              left: 78%;
+              transform: rotate(80.03deg);
             }
           }
           &.tab5 {
             .icon-trophy {
-              top: 50%;
-              right: 90%;
-
-              img {
-                transform: scaleX(-1);
-              }
+              top: 39%;
+              right: 95%;
+              transform: matrix(0.65, -0.76, 0.76, 0.65, 0, 0);
             }
             .icon-star-3 {
               top: 0%;
-              right: 15%;
-
-              img {
-                transform: rotate(30deg) scaleY(-1);
-              }
+              right: 12%;
+              transform: matrix(0.46, -0.89, 0.89, 0.46, 0, 0);
             }
             .icon-bulb {
-              top: 70%;
-              left: 88%;
-
-              img {
-                transform: scaleX(-1);
-              }
+              top: 68%;
+              right: -15%;
+              transform: matrix(0.17, 0.98, -0.98, 0.17, 0, 0);
             }
           }
           &.tab6 {
             .icon-trophy {
-              top: 60%;
-              right: 90%;
-
-              img {
-                transform: scaleX(-1);
-              }
+              top: 61%;
+              left: -6%;
+              transform: matrix(0.65, -0.76, 0.76, 0.65, 0, 0);
             }
             .icon-star-3 {
-              top: 4%;
-              right: 80%;
-
-              img {
-                transform: rotate(20deg) scaleY(-1);
-              }
+              top: 2%;
+              right: 85%;
+              transform: rotate(-106.71deg);
             }
             .icon-bulb {
-              top: 40%;
-              left: 88%;
-
-              img {
-                transform: scaleX(-1);
-              }
+              top: 42%;
+              right: -9%;
+              transform: matrix(0.17, 0.98, -0.98, 0.17, 0, 0);
             }
           }
           &.tab7 {
             .icon-trophy {
-              top: 40%;
-              left: 88%;
+              top: 52%;
+              right: -8%;
+              transform: matrix(1, -0.09, 0.09, 1, 0, 0);
             }
             .icon-star-3 {
-              top: 4%;
-              right: 80%;
-
-              img {
-                transform: rotate(20deg) scaleY(-1);
-              }
+              top: 2%;
+              right: 85%;
+              transform: rotate(-106.71deg);
             }
             .icon-bulb {
               top: 60%;
               right: 90%;
+              transform: matrix(0.93, 0.38, -0.38, 0.93, 0, 0);
             }
           }
 
