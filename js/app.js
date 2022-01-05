@@ -1,3 +1,4 @@
+//header carousel
 $(".header__banner").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -6,7 +7,7 @@ $(".header__banner").slick({
   fade: true,
   arrows: false,
 });
-
+//feedback carousel
 $(".feedback__main--box").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -26,7 +27,7 @@ $(".feedback__main--nav").slick({
   dots: false,
   centerPadding: 0,
 });
-
+//vision accordion
 $(document).ready(function () {
   if ($(".vision__main--left--item").length > 0) {
     $(".vision__main--left--item .vision__title").on("click", function () {
@@ -49,4 +50,35 @@ $(document).ready(function () {
       .first()
       .addClass("active");
   }
+});
+
+// journey tab
+$(document).ready(function () {
+  var currentTab = 0;
+
+  $(".journey__wrapper--tabs li").on("click", function () {
+    $(".journey__wrapper--tabs li").removeClass("activeLeftToRight");
+    $(".journey__wrapper--tabs li").removeClass("activeRightToLeft");
+    $(".journey__wrapper--tabs li").removeClass("hiddenRightToLeft");
+    $(".journey__wrapper--tabs li").removeClass("hiddenLeftToRight");
+    let index = $(".journey__wrapper--tabs li").index(this);
+    var id = $(this).attr("data-tab");
+    $(".journey__wrapper--content--tab").removeClass("active");
+    if (index > currentTab) {
+      $(this).addClass("activeLeftToRight");
+      $(".journey__wrapper--tabs li")
+        .eq(currentTab)
+        .addClass("hiddenLeftToRight");
+    } else if (index < currentTab) {
+      $(this).addClass("activeRightToLeft");
+      $(".journey__wrapper--tabs li")
+        .eq(currentTab)
+        .addClass("hiddenRightToLeft");
+    }
+
+    $(id).addClass("active");
+    currentTab = index;
+  });
+  $(".journey__wrapper--tabs li").first().addClass("activeLeftToRight");
+  $(".journey__wrapper--content--tab").first().addClass("active");
 });

@@ -869,7 +869,7 @@ h6 {
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #ffffff), color-stop(50%, #2576b9));
   background: linear-gradient(to right, #ffffff 50%, #2576b9 50%);
   background-size: 200% 100%;
-  background-position: right botom;
+  background-position: right bottom;
   -webkit-animation: activeRightToLeft 1s;
           animation: activeRightToLeft 1s;
 }
@@ -982,12 +982,16 @@ h6 {
 }
 
 .journey__main .journey__wrapper--content--tab {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.journey__main .journey__wrapper--content--tab.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .journey__main .journey__wrapper--content--tab.tab1 .icon-trophy {

@@ -76,7 +76,7 @@
                 $primary__color 50%
               );
               background-size: 200% 100%;
-              background-position: right botom;
+              background-position: right bottom;
               animation: activeRightToLeft 1s;
               @keyframes activeRightToLeft {
                 0% {
@@ -154,8 +154,11 @@
       &--content {
         width: 100%;
         &--tab {
-          display: flex;
+          display: none;
           justify-content: space-between;
+          &.active {
+            display: flex;
+          }
           &.tab1 {
             .icon-trophy {
               top: 17%;
