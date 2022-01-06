@@ -1356,80 +1356,79 @@ h6 {
   left: 14.5%;
   width: 103.53px;
   height: 138.68px;
-  opacity: 0.5;
 }
 
 .teacher__icon--items .icon-pen img {
   width: 100%;
+  opacity: 0.5;
 }
 
 .teacher__icon--items .icon-pencil {
   position: absolute;
   content: "";
-  top: 13.5%;
-  left: 14.5%;
-  width: 103.53px;
-  height: 138.68px;
-  opacity: 0.5;
+  width: 51.5px;
+  height: 69.03px;
+  bottom: 28.5%;
+  left: 9%;
 }
 
 .teacher__icon--items .icon-pencil img {
+  opacity: 0.5;
   width: 100%;
 }
 
 .teacher__icon--items .icon-book {
   position: absolute;
   content: "";
-  top: 13.5%;
-  left: 14.5%;
-  width: 103.53px;
-  height: 138.68px;
-  opacity: 0.5;
+  top: 7%;
+  right: 11.4%;
+  width: 116.63px;
+  height: 105.12px;
 }
 
 .teacher__icon--items .icon-book img {
+  opacity: 0.5;
   width: 100%;
 }
 
 .teacher__icon--items .icon-hat {
   position: absolute;
   content: "";
-  top: 13.5%;
-  left: 14.5%;
-  width: 103.53px;
-  height: 138.68px;
-  opacity: 0.5;
+  bottom: 12%;
+  right: 6%;
+  width: 100px;
+  height: 72px;
 }
 
 .teacher__icon--items .icon-hat img {
+  opacity: 0.5;
   width: 100%;
 }
 
 .teacher__icon--items .icon-magnifying-glass {
   position: absolute;
   content: "";
-  top: 13.5%;
-  left: 14.5%;
-  width: 103.53px;
-  height: 138.68px;
-  opacity: 0.5;
+  bottom: 6%;
+  left: 14.9%;
+  width: 88.18px;
 }
 
 .teacher__icon--items .icon-magnifying-glass img {
+  opacity: 0.5;
   width: 100%;
 }
 
 .teacher__icon--items .icon-bigstar {
   position: absolute;
   content: "";
-  top: 13.5%;
-  left: 14.5%;
-  width: 103.53px;
-  height: 138.68px;
-  opacity: 0.5;
+  width: 90px;
+  height: 54px;
+  top: 54.8%;
+  right: 34.3%;
 }
 
 .teacher__icon--items .icon-bigstar img {
+  opacity: 0.5;
   width: 100%;
 }
 
@@ -1440,10 +1439,10 @@ h6 {
   left: 14.5%;
   width: 103.53px;
   height: 138.68px;
-  opacity: 0.5;
 }
 
 .teacher__icon--items .icon-teacher-star1 img {
+  opacity: 0.5;
   width: 100%;
 }
 
@@ -1454,10 +1453,10 @@ h6 {
   left: 14.5%;
   width: 103.53px;
   height: 138.68px;
-  opacity: 0.5;
 }
 
 .teacher__icon--items .icon-teacher-star2 img {
+  opacity: 0.5;
   width: 100%;
 }
 
@@ -1468,11 +1467,11 @@ h6 {
   left: 14.5%;
   width: 103.53px;
   height: 138.68px;
-  opacity: 0.5;
 }
 
 .teacher__icon--items .icon-teacher-star3 img {
   width: 100%;
+  opacity: 0.5;
 }
 
 .teacher__icon--items .icon-teacher-star4 {
@@ -1482,11 +1481,11 @@ h6 {
   left: 14.5%;
   width: 103.53px;
   height: 138.68px;
-  opacity: 0.5;
 }
 
 .teacher__icon--items .icon-teacher-star4 img {
   width: 100%;
+  opacity: 0.5;
 }
 
 .teacher__icon--items .icon-teacher-star5 {
@@ -1496,11 +1495,11 @@ h6 {
   left: 14.5%;
   width: 103.53px;
   height: 138.68px;
-  opacity: 0.5;
 }
 
 .teacher__icon--items .icon-teacher-star5 img {
   width: 100%;
+  opacity: 0.5;
 }
 
 .teacher__icon--items .icon-teacher-star6 {
@@ -1510,10 +1509,10 @@ h6 {
   left: 14.5%;
   width: 103.53px;
   height: 138.68px;
-  opacity: 0.5;
 }
 
 .teacher__icon--items .icon-teacher-star6 img {
   width: 100%;
+  opacity: 0.5;
 }
 /*# sourceMappingURL=style.css.map */
