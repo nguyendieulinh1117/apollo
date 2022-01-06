@@ -57,23 +57,26 @@ $(document).ready(function () {
   var currentTab = 0;
 
   $(".journey__wrapper--tabs li").on("click", function () {
-    $(".journey__wrapper--tabs li").removeClass("activeLeftToRight");
-    $(".journey__wrapper--tabs li").removeClass("activeRightToLeft");
-    $(".journey__wrapper--tabs li").removeClass("hiddenRightToLeft");
-    $(".journey__wrapper--tabs li").removeClass("hiddenLeftToRight");
     let index = $(".journey__wrapper--tabs li").index(this);
     var id = $(this).attr("data-tab");
     $(".journey__wrapper--content--tab").removeClass("active");
-    if (index > currentTab) {
-      $(this).addClass("activeLeftToRight");
-      $(".journey__wrapper--tabs li")
-        .eq(currentTab)
-        .addClass("hiddenLeftToRight");
-    } else if (index < currentTab) {
-      $(this).addClass("activeRightToLeft");
-      $(".journey__wrapper--tabs li")
-        .eq(currentTab)
-        .addClass("hiddenRightToLeft");
+    if (index == currentTab) {
+    } else {
+      $(".journey__wrapper--tabs li").removeClass("activeLeftToRight");
+      $(".journey__wrapper--tabs li").removeClass("activeRightToLeft");
+      $(".journey__wrapper--tabs li").removeClass("hiddenRightToLeft");
+      $(".journey__wrapper--tabs li").removeClass("hiddenLeftToRight");
+      if (index > currentTab) {
+        $(this).addClass("activeLeftToRight");
+        $(".journey__wrapper--tabs li")
+          .eq(currentTab)
+          .addClass("hiddenLeftToRight");
+      } else if (index < currentTab) {
+        $(this).addClass("activeRightToLeft");
+        $(".journey__wrapper--tabs li")
+          .eq(currentTab)
+          .addClass("hiddenRightToLeft");
+      }
     }
 
     $(id).addClass("active");
