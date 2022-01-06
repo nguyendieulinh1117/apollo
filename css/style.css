@@ -1521,4 +1521,97 @@ h6 {
 .teacher__icon--items .icon-teacher-star7 img {
   width: 100%;
 }
+
+.infrastructure {
+  padding-top: 224px;
+  position: relative;
+}
+
+.infrastructure .animated-trophy {
+  position: relative;
+  height: 100px;
+}
+
+.infrastructure .animated-trophy .icon-trophy {
+  position: absolute;
+  content: "";
+  top: -30%;
+  left: 8%;
+}
+
+.infrastructure .animated-trophy .icon-blue-star1 {
+  position: absolute;
+  content: "";
+  bottom: 0%;
+  left: 6.5%;
+}
+
+.infrastructure .animated-trophy .icon-blue-star2 {
+  position: absolute;
+  content: "";
+  top: -25%;
+  left: 7.2%;
+}
+
+.infrastructure .animated__line {
+  position: absolute;
+  content: "";
+  top: 300px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.infrastructure .animated__line .infrastructure__line {
+  width: 100%;
+  position: relative;
+  margin-top: 34px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.infrastructure .animated__line .infrastructure__line .line img {
+  width: 100%;
+}
+
+.infrastructure .animated__line .infrastructure__line .icon-rocket {
+  position: absolute;
+  content: "";
+  top: 80%;
+  left: 100%;
+  -webkit-transform: rotate(31.5deg);
+          transform: rotate(31.5deg);
+  z-index: 5;
+}
+
+.infrastructure .animated__line .infrastructure__line .icon-rocket img {
+  -webkit-transform: scaleX(-1) rotate(-30deg);
+          transform: scaleX(-1) rotate(-30deg);
+}
+
+.infrastructure .animated__line .infrastructure__line .icon-star-1 {
+  position: absolute;
+  content: "";
+  top: 26%;
+  left: 12%;
+  z-index: 2;
+}
+
+.infrastructure .animated__line .infrastructure__line .icon-star-2 {
+  position: absolute;
+  content: "";
+  z-index: 2;
+  top: 38%;
+  left: 87%;
+}
+
+.infrastructure .animated__line .infrastructure__line .bg-white-line {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  background-color: #ffffff;
+  top: 80%;
+  left: 100%;
+  z-index: 1;
+}
 /*# sourceMappingURL=style.css.map */

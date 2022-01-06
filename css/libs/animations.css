@@ -2117,3 +2117,208 @@
 .globalEffect.go {
   animation: globalEffect 1.5s ease-in-out;
 }
+
+@keyframes rocketEffect1 {
+  0% {
+    top: -33%;
+    left: -8.5%;
+    transform: rotate(45deg);
+  }
+  11% {
+    top: 9%;
+    left: 2.5%;
+    transform: rotate(45deg);
+  }
+  16% {
+    top: 24%;
+    left: 8%;
+    transform: rotate(35deg);
+  }
+  21% {
+    top: 35%;
+    left: 14%;
+    transform: rotate(19deg);
+  }
+  26% {
+    top: 39%;
+    left: 18%;
+
+    transform: rotate(1deg);
+  }
+  30% {
+    top: 37%;
+    left: 22%;
+
+    transform: rotate(-15deg);
+  }
+  38% {
+    top: 27%;
+    left: 28%;
+
+    transform: rotate(-25.5deg);
+  }
+  41% {
+    top: 20%;
+    left: 32%;
+
+    transform: rotate(-22.5deg);
+  }
+  45% {
+    top: 19.5%;
+    left: 38%;
+
+    transform: rotate(22.5deg);
+  }
+  50% {
+    top: 38.5%;
+    left: 46%;
+
+    transform: rotate(41.5deg);
+  }
+  60% {
+    top: 71.5%;
+    left: 58%;
+
+    transform: rotate(29.5deg);
+  }
+  64% {
+    top: 77%;
+    left: 63%;
+
+    transform: rotate(3.5deg);
+  }
+  69% {
+    top: 70%;
+    left: 69%;
+
+    transform: rotate(-37.5deg);
+  }
+  71% {
+    top: 70%;
+    left: 70%;
+
+    transform: rotate(-91.5deg);
+  }
+  75% {
+    top: 51%;
+    left: 69%;
+    transform: rotate(-94.5deg);
+  }
+  80% {
+    top: 40%;
+    left: 69%;
+
+    transform: rotate(-72.5deg);
+  }
+  88% {
+    top: 24%;
+    left: 70%;
+
+    transform: rotate(-8.5deg);
+  }
+  92% {
+    top: 24%;
+    left: 75%;
+
+    transform: rotate(21.5deg);
+  }
+  100% {
+    top: 80%;
+    left: 100%;
+
+    transform: rotate(31.5deg);
+  }
+}
+.rocketEffect1 {
+  top: -33%;
+  left: -8.5%;
+  transform: rotate(45deg);
+}
+.rocketEffect1.go {
+  animation: rocketEffect1 1.5s linear;
+}
+@keyframes lineEffect1 {
+  0% {
+    top: -33%;
+    left: -8.5%;
+  }
+  11% {
+    top: 9%;
+    left: 2.5%;
+  }
+  16% {
+    top: 24%;
+    left: 8%;
+  }
+  21% {
+    top: 30%;
+    left: 14%;
+  }
+  26% {
+    top: 33%;
+    left: 18%;
+  }
+  30% {
+    top: 33%;
+    left: 22%;
+  }
+  38% {
+    top: 27%;
+    left: 28%;
+  }
+  41% {
+    top: 20%;
+    left: 32%;
+  }
+  45% {
+    top: 19.5%;
+    left: 38%;
+  }
+  50% {
+    top: 38.5%;
+    left: 46%;
+  }
+  60% {
+    top: 38.5%;
+    left: 58%;
+  }
+  64% {
+    top: 37%;
+    left: 63%;
+  }
+  69% {
+    top: 39%;
+    left: 69%;
+  }
+  71% {
+    top: 39%;
+    left: 70%;
+  }
+  75% {
+    top: 39%;
+    left: 69%;
+  }
+  80% {
+    top: 38%;
+    left: 69%;
+  }
+  88% {
+    top: 24%;
+    left: 70%;
+  }
+  92% {
+    top: 24%;
+    left: 75%;
+  }
+  100% {
+    top: 80%;
+    left: 100%;
+  }
+}
+.lineEffect1 {
+  top: -33%;
+  left: -8.5%;
+}
+.lineEffect1.go {
+  animation: lineEffect1 1.5s linear;
+}
