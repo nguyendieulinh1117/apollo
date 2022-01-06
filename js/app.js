@@ -82,3 +82,14 @@ $(document).ready(function () {
   $(".journey__wrapper--tabs li").first().addClass("activeLeftToRight");
   $(".journey__wrapper--content--tab").first().addClass("active");
 });
+
+//teacher carousel
+$(".teacher__main--box").slick({
+  prevArrow: `<span class="btn-arrow btn-prev"><img src="./images/arrow-left.svg"/></span>`,
+  nextArrow: `<span class="btn-arrow btn-next"><img src="./images/arrow-right.svg"/></span>`,
+  arrows: true,
+
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+});
