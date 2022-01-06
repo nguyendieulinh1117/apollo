@@ -1340,6 +1340,7 @@ h6 {
 .teacher__icon {
   position: absolute;
   width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
 }
@@ -1347,20 +1348,21 @@ h6 {
 .teacher__icon--items {
   position: relative;
   width: 100%;
+  height: 100%;
+  opacity: 0.35;
 }
 
 .teacher__icon--items .icon-pen {
   position: absolute;
   content: "";
-  top: 13.5%;
-  left: 14.5%;
+  top: -8%;
+  left: 6%;
   width: 103.53px;
   height: 138.68px;
 }
 
 .teacher__icon--items .icon-pen img {
   width: 100%;
-  opacity: 0.5;
 }
 
 .teacher__icon--items .icon-pencil {
@@ -1368,151 +1370,155 @@ h6 {
   content: "";
   width: 51.5px;
   height: 69.03px;
-  bottom: 28.5%;
-  left: 9%;
+  bottom: 10%;
+  left: 0%;
 }
 
 .teacher__icon--items .icon-pencil img {
-  opacity: 0.5;
   width: 100%;
 }
 
 .teacher__icon--items .icon-book {
   position: absolute;
   content: "";
-  top: 7%;
-  right: 11.4%;
+  top: -12%;
+  right: 5%;
   width: 116.63px;
   height: 105.12px;
 }
 
 .teacher__icon--items .icon-book img {
-  opacity: 0.5;
   width: 100%;
 }
 
 .teacher__icon--items .icon-hat {
   position: absolute;
   content: "";
-  bottom: 12%;
-  right: 6%;
+  bottom: -12%;
+  right: -2%;
   width: 100px;
   height: 72px;
 }
 
 .teacher__icon--items .icon-hat img {
-  opacity: 0.5;
   width: 100%;
 }
 
 .teacher__icon--items .icon-magnifying-glass {
   position: absolute;
   content: "";
-  bottom: 6%;
-  left: 14.9%;
+  bottom: -30%;
+  left: 8%;
   width: 88.18px;
+  height: 88.18px;
+  z-index: 2;
 }
 
 .teacher__icon--items .icon-magnifying-glass img {
-  opacity: 0.5;
   width: 100%;
 }
 
 .teacher__icon--items .icon-bigstar {
   position: absolute;
   content: "";
-  width: 90px;
-  height: 54px;
-  top: 54.8%;
-  right: 34.3%;
+  width: 90.04px;
+  height: 53.87px;
+  top: 57.8%;
+  right: 33.3%;
 }
 
 .teacher__icon--items .icon-bigstar img {
-  opacity: 0.5;
   width: 100%;
 }
 
 .teacher__icon--items .icon-teacher-star1 {
   position: absolute;
   content: "";
-  top: 13.5%;
-  left: 14.5%;
-  width: 103.53px;
-  height: 138.68px;
+  top: -18%;
+  right: 34.5%;
+  width: 33.88px;
+  height: 34.73px;
 }
 
 .teacher__icon--items .icon-teacher-star1 img {
-  opacity: 0.5;
   width: 100%;
 }
 
 .teacher__icon--items .icon-teacher-star2 {
   position: absolute;
   content: "";
-  top: 13.5%;
-  left: 14.5%;
-  width: 103.53px;
-  height: 138.68px;
+  top: 20%;
+  left: 39.5%;
+  width: 33.38px;
+  height: 34.82px;
 }
 
 .teacher__icon--items .icon-teacher-star2 img {
-  opacity: 0.5;
   width: 100%;
 }
 
 .teacher__icon--items .icon-teacher-star3 {
   position: absolute;
   content: "";
-  top: 13.5%;
-  left: 14.5%;
-  width: 103.53px;
-  height: 138.68px;
+  top: 57.5%;
+  left: 34%;
+  width: 34.75px;
+  height: 33.77px;
 }
 
 .teacher__icon--items .icon-teacher-star3 img {
   width: 100%;
-  opacity: 0.5;
 }
 
 .teacher__icon--items .icon-teacher-star4 {
   position: absolute;
   content: "";
-  top: 13.5%;
-  left: 14.5%;
-  width: 103.53px;
-  height: 138.68px;
+  bottom: -20%;
+  left: 27.5%;
+  width: 38.31px;
+  height: 38.31px;
 }
 
 .teacher__icon--items .icon-teacher-star4 img {
   width: 100%;
-  opacity: 0.5;
 }
 
 .teacher__icon--items .icon-teacher-star5 {
   position: absolute;
   content: "";
-  top: 13.5%;
-  left: 14.5%;
-  width: 103.53px;
-  height: 138.68px;
+  bottom: -16%;
+  right: 34.5%;
+  width: 33.88px;
+  height: 34.72px;
 }
 
 .teacher__icon--items .icon-teacher-star5 img {
   width: 100%;
-  opacity: 0.5;
 }
 
 .teacher__icon--items .icon-teacher-star6 {
   position: absolute;
   content: "";
-  top: 13.5%;
-  left: 14.5%;
-  width: 103.53px;
-  height: 138.68px;
+  top: 20%;
+  right: 8%;
+  width: 28.68px;
+  height: 28.3px;
 }
 
 .teacher__icon--items .icon-teacher-star6 img {
   width: 100%;
-  opacity: 0.5;
+}
+
+.teacher__icon--items .icon-teacher-star7 {
+  position: absolute;
+  content: "";
+  width: 25.1px;
+  height: 25.1px;
+  top: -23%;
+  left: 25.5%;
+}
+
+.teacher__icon--items .icon-teacher-star7 img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
