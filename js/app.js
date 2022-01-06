@@ -93,3 +93,24 @@ $(".teacher__main--box").slick({
   slidesToShow: 3,
   slidesToScroll: 1,
 });
+
+// infrastructure
+$(".infrastructure__main--for").slick({
+  prevArrow: `<span class="btn-arrow btn-prev"><img src="./images/arrow-left.svg"/></span>`,
+  nextArrow: `<span class="btn-arrow btn-next"><img src="./images/arrow-right.svg"/></span>`,
+  arrows: true,
+  asNavFor: ".infrastructure__main--nav",
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+});
+$(".infrastructure__main--nav").slick({
+  arrows: false,
+  dots: false,
+  asNavFor: ".infrastructure__main--for",
+  infinite: true,
+  slidesToShow: 3,
+  centerMode: true,
+  focusOnSelect: true,
+  centerPadding: 0,
+});

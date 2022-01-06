@@ -1529,7 +1529,7 @@ h6 {
 
 .infrastructure .animated-trophy {
   position: relative;
-  height: 100px;
+  height: 70px;
 }
 
 .infrastructure .animated-trophy .icon-trophy {
@@ -1542,7 +1542,7 @@ h6 {
 .infrastructure .animated-trophy .icon-blue-star1 {
   position: absolute;
   content: "";
-  bottom: 0%;
+  top: 4%;
   left: 6.5%;
 }
 
@@ -1551,6 +1551,14 @@ h6 {
   content: "";
   top: -25%;
   left: 7.2%;
+}
+
+.infrastructure .icon-lab {
+  position: absolute;
+  content: "";
+  z-index: 2;
+  right: 5%;
+  bottom: 10%;
 }
 
 .infrastructure .animated__line {
@@ -1613,5 +1621,63 @@ h6 {
   top: 80%;
   left: 100%;
   z-index: 1;
+}
+
+.infrastructure__main {
+  position: relative;
+  width: 912px;
+  margin: auto;
+  z-index: 5;
+}
+
+.infrastructure__main--for .btn-arrow {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+
+.infrastructure__main--for .btn-arrow.btn-prev {
+  left: -32.5px;
+  -webkit-transform: translateX(-32.5px);
+          transform: translateX(-32.5px);
+}
+
+.infrastructure__main--for .btn-arrow.btn-next {
+  right: -32.5px;
+  -webkit-transform: translateX(32.5px);
+          transform: translateX(32.5px);
+}
+
+.infrastructure__main--for--item {
+  height: 432px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.infrastructure__main--for--item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.infrastructure__main--nav {
+  margin-top: 16px;
+}
+
+.infrastructure__main--nav--item {
+  height: 128px;
+  border-radius: 10px;
+  padding: 0 4px;
+}
+
+.infrastructure__main--nav--item.slick-center img {
+  border: 8px solid #2576b9;
+}
+
+.infrastructure__main--nav--item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */

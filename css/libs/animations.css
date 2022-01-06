@@ -2322,3 +2322,38 @@
 .lineEffect1.go {
   animation: lineEffect1 1.5s linear;
 }
+.trophyTada {
+  transform: rotate(0);
+}
+.trophyTada.go {
+  animation: balloonEffect 1s infinite;
+  animation-fill-mode: both;
+}
+@keyframes labTada {
+  0% {
+    transform: rotate(0);
+  }
+  10%,
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: rotate(-3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.labTada {
+  transform: rotate(0);
+}
+.labTada.go {
+  animation: labTada 1s infinite;
+  animation-fill-mode: both;
+}
