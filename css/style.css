@@ -1362,4 +1362,158 @@ h6 {
 .teacher__icon--items .icon-pen img {
   width: 100%;
 }
+
+.teacher__icon--items .icon-pencil {
+  position: absolute;
+  content: "";
+  top: 13.5%;
+  left: 14.5%;
+  width: 103.53px;
+  height: 138.68px;
+  opacity: 0.5;
+}
+
+.teacher__icon--items .icon-pencil img {
+  width: 100%;
+}
+
+.teacher__icon--items .icon-book {
+  position: absolute;
+  content: "";
+  top: 13.5%;
+  left: 14.5%;
+  width: 103.53px;
+  height: 138.68px;
+  opacity: 0.5;
+}
+
+.teacher__icon--items .icon-book img {
+  width: 100%;
+}
+
+.teacher__icon--items .icon-hat {
+  position: absolute;
+  content: "";
+  top: 13.5%;
+  left: 14.5%;
+  width: 103.53px;
+  height: 138.68px;
+  opacity: 0.5;
+}
+
+.teacher__icon--items .icon-hat img {
+  width: 100%;
+}
+
+.teacher__icon--items .icon-magnifying-glass {
+  position: absolute;
+  content: "";
+  top: 13.5%;
+  left: 14.5%;
+  width: 103.53px;
+  height: 138.68px;
+  opacity: 0.5;
+}
+
+.teacher__icon--items .icon-magnifying-glass img {
+  width: 100%;
+}
+
+.teacher__icon--items .icon-bigstar {
+  position: absolute;
+  content: "";
+  top: 13.5%;
+  left: 14.5%;
+  width: 103.53px;
+  height: 138.68px;
+  opacity: 0.5;
+}
+
+.teacher__icon--items .icon-bigstar img {
+  width: 100%;
+}
+
+.teacher__icon--items .icon-teacher-star1 {
+  position: absolute;
+  content: "";
+  top: 13.5%;
+  left: 14.5%;
+  width: 103.53px;
+  height: 138.68px;
+  opacity: 0.5;
+}
+
+.teacher__icon--items .icon-teacher-star1 img {
+  width: 100%;
+}
+
+.teacher__icon--items .icon-teacher-star2 {
+  position: absolute;
+  content: "";
+  top: 13.5%;
+  left: 14.5%;
+  width: 103.53px;
+  height: 138.68px;
+  opacity: 0.5;
+}
+
+.teacher__icon--items .icon-teacher-star2 img {
+  width: 100%;
+}
+
+.teacher__icon--items .icon-teacher-star3 {
+  position: absolute;
+  content: "";
+  top: 13.5%;
+  left: 14.5%;
+  width: 103.53px;
+  height: 138.68px;
+  opacity: 0.5;
+}
+
+.teacher__icon--items .icon-teacher-star3 img {
+  width: 100%;
+}
+
+.teacher__icon--items .icon-teacher-star4 {
+  position: absolute;
+  content: "";
+  top: 13.5%;
+  left: 14.5%;
+  width: 103.53px;
+  height: 138.68px;
+  opacity: 0.5;
+}
+
+.teacher__icon--items .icon-teacher-star4 img {
+  width: 100%;
+}
+
+.teacher__icon--items .icon-teacher-star5 {
+  position: absolute;
+  content: "";
+  top: 13.5%;
+  left: 14.5%;
+  width: 103.53px;
+  height: 138.68px;
+  opacity: 0.5;
+}
+
+.teacher__icon--items .icon-teacher-star5 img {
+  width: 100%;
+}
+
+.teacher__icon--items .icon-teacher-star6 {
+  position: absolute;
+  content: "";
+  top: 13.5%;
+  left: 14.5%;
+  width: 103.53px;
+  height: 138.68px;
+  opacity: 0.5;
+}
+
+.teacher__icon--items .icon-teacher-star6 img {
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
