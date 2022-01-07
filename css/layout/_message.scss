@@ -1,0 +1,238 @@
+.message {
+  margin-top: 128px;
+  position: relative;
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    &--main {
+      position: relative;
+      .title-main {
+        text-shadow: $secondary__color 9px 0px 0px,
+          $secondary__color 8.9445px 0.997944px 0px,
+          $secondary__color 8.77869px 1.98358px 0px,
+          $secondary__color 8.50461px 2.94475px 0px,
+          $secondary__color 8.12565px 3.86961px 0px,
+          $secondary__color 7.64647px 4.74674px 0px,
+          $secondary__color 7.07299px 5.56533px 0px,
+          $secondary__color 6.41227px 6.31528px 0px,
+          $secondary__color 5.67248px 6.98735px 0px,
+          $secondary__color 4.86272px 7.57324px 0px,
+          $secondary__color 3.99299px 8.06573px 0px,
+          $secondary__color 3.07402px 8.45875px 0px,
+          $secondary__color 2.11714px 8.74744px 0px,
+          $secondary__color 1.13414px 8.92825px 0px,
+          $secondary__color 0.137162px 8.99895px 0px,
+          $secondary__color -0.861512px 8.95867px 0px,
+          $secondary__color -1.84956px 8.8079px 0px,
+          $secondary__color -2.8148px 8.5485px 0px,
+          $secondary__color -3.74532px 8.18368px 0px,
+          $secondary__color -4.62965px 7.71792px 0px,
+          $secondary__color -5.45689px 7.15698px 0px,
+          $secondary__color -6.21682px 6.50777px 0px,
+          $secondary__color -6.90009px 5.77831px 0px,
+          $secondary__color -7.49825px 4.97757px 0px,
+          $secondary__color -8.00394px 4.11545px 0px,
+          $secondary__color -8.41092px 3.20258px 0px,
+          $secondary__color -8.71416px 2.2502px 0px,
+          $secondary__color -8.90993px 1.27008px 0px,
+          $secondary__color -8.99582px 0.274291px 0px,
+          $secondary__color -8.97076px -0.72488px 0px,
+          $secondary__color -8.83507px -1.71511px 0px,
+          $secondary__color -8.59041px -2.68419px 0px,
+          $secondary__color -8.23981px -3.62017px 0px,
+          $secondary__color -7.78758px -4.51149px 0px,
+          $secondary__color -7.23931px -5.34718px 0px,
+          $secondary__color -6.60176px -6.11692px 0px,
+          $secondary__color -5.88279px -6.81122px 0px,
+          $secondary__color -5.09127px -7.42152px 0px,
+          $secondary__color -4.23696px -7.94029px 0px,
+          $secondary__color -3.33039px -8.36113px 0px,
+          $secondary__color -2.38275px -8.67885px 0px,
+          $secondary__color -1.40572px -8.88954px 0px,
+          $secondary__color -0.411357px -8.99059px 0px,
+          $secondary__color 0.58808px -8.98077px 0px,
+          $secondary__color 1.58026px -8.86018px 0px,
+          $secondary__color 2.55296px -8.63032px 0px,
+          $secondary__color 3.49417px -8.29402px 0px,
+          $secondary__color 4.39229px -7.85543px 0px,
+          $secondary__color 5.23623px -7.31996px 0px,
+          $secondary__color 6.0156px -6.69422px 0px,
+          $secondary__color 6.72078px -5.98591px 0px,
+          $secondary__color 7.34307px -5.20378px 0px,
+          $secondary__color 7.87479px -4.35748px 0px,
+          $secondary__color 8.3094px -3.45743px 0px,
+          $secondary__color 8.64153px -2.51474px 0px,
+          $secondary__color 8.86709px -1.54104px 0px,
+          $secondary__color 8.98328px -0.548328px 0px;
+      }
+      .title-bg {
+        position: absolute;
+        width: 100%;
+        content: "";
+        top: 5px;
+        left: 4px;
+        color: $secondary__color;
+        z-index: -1;
+        text-shadow: $secondary__color 9px 0px 0px,
+          $secondary__color 8.9445px 0.997944px 0px,
+          $secondary__color 8.77869px 1.98358px 0px,
+          $secondary__color 8.50461px 2.94475px 0px,
+          $secondary__color 8.12565px 3.86961px 0px,
+          $secondary__color 7.64647px 4.74674px 0px,
+          $secondary__color 7.07299px 5.56533px 0px,
+          $secondary__color 6.41227px 6.31528px 0px,
+          $secondary__color 5.67248px 6.98735px 0px,
+          $secondary__color 4.86272px 7.57324px 0px,
+          $secondary__color 3.99299px 8.06573px 0px,
+          $secondary__color 3.07402px 8.45875px 0px,
+          $secondary__color 2.11714px 8.74744px 0px,
+          $secondary__color 1.13414px 8.92825px 0px,
+          $secondary__color 0.137162px 8.99895px 0px,
+          $secondary__color -0.861512px 8.95867px 0px,
+          $secondary__color -1.84956px 8.8079px 0px,
+          $secondary__color -2.8148px 8.5485px 0px,
+          $secondary__color -3.74532px 8.18368px 0px,
+          $secondary__color -4.62965px 7.71792px 0px,
+          $secondary__color -5.45689px 7.15698px 0px,
+          $secondary__color -6.21682px 6.50777px 0px,
+          $secondary__color -6.90009px 5.77831px 0px,
+          $secondary__color -7.49825px 4.97757px 0px,
+          $secondary__color -8.00394px 4.11545px 0px,
+          $secondary__color -8.41092px 3.20258px 0px,
+          $secondary__color -8.71416px 2.2502px 0px,
+          $secondary__color -8.90993px 1.27008px 0px,
+          $secondary__color -8.99582px 0.274291px 0px,
+          $secondary__color -8.97076px -0.72488px 0px,
+          $secondary__color -8.83507px -1.71511px 0px,
+          $secondary__color -8.59041px -2.68419px 0px,
+          $secondary__color -8.23981px -3.62017px 0px,
+          $secondary__color -7.78758px -4.51149px 0px,
+          $secondary__color -7.23931px -5.34718px 0px,
+          $secondary__color -6.60176px -6.11692px 0px,
+          $secondary__color -5.88279px -6.81122px 0px,
+          $secondary__color -5.09127px -7.42152px 0px,
+          $secondary__color -4.23696px -7.94029px 0px,
+          $secondary__color -3.33039px -8.36113px 0px,
+          $secondary__color -2.38275px -8.67885px 0px,
+          $secondary__color -1.40572px -8.88954px 0px,
+          $secondary__color -0.411357px -8.99059px 0px,
+          $secondary__color 0.58808px -8.98077px 0px,
+          $secondary__color 1.58026px -8.86018px 0px,
+          $secondary__color 2.55296px -8.63032px 0px,
+          $secondary__color 3.49417px -8.29402px 0px,
+          $secondary__color 4.39229px -7.85543px 0px,
+          $secondary__color 5.23623px -7.31996px 0px,
+          $secondary__color 6.0156px -6.69422px 0px,
+          $secondary__color 6.72078px -5.98591px 0px,
+          $secondary__color 7.34307px -5.20378px 0px,
+          $secondary__color 7.87479px -4.35748px 0px,
+          $secondary__color 8.3094px -3.45743px 0px,
+          $secondary__color 8.64153px -2.51474px 0px,
+          $secondary__color 8.86709px -1.54104px 0px,
+          $secondary__color 8.98328px -0.548328px 0px;
+      }
+      .title-shadow {
+        position: absolute;
+        width: 100%;
+        content: "";
+        top: 15px;
+        left: 12px;
+        color: $secondary__color;
+        z-index: -2;
+        text-shadow: $gray__color 9px 0px 0px,
+          $gray__color 8.9445px 0.997944px 0px,
+          $gray__color 8.77869px 1.98358px 0px,
+          $gray__color 8.50461px 2.94475px 0px,
+          $gray__color 8.12565px 3.86961px 0px,
+          $gray__color 7.64647px 4.74674px 0px,
+          $gray__color 7.07299px 5.56533px 0px,
+          $gray__color 6.41227px 6.31528px 0px,
+          $gray__color 5.67248px 6.98735px 0px,
+          $gray__color 4.86272px 7.57324px 0px,
+          $gray__color 3.99299px 8.06573px 0px,
+          $gray__color 3.07402px 8.45875px 0px,
+          $gray__color 2.11714px 8.74744px 0px,
+          $gray__color 1.13414px 8.92825px 0px,
+          $gray__color 0.137162px 8.99895px 0px,
+          $gray__color -0.861512px 8.95867px 0px,
+          $gray__color -1.84956px 8.8079px 0px,
+          $gray__color -2.8148px 8.5485px 0px,
+          $gray__color -3.74532px 8.18368px 0px,
+          $gray__color -4.62965px 7.71792px 0px,
+          $gray__color -5.45689px 7.15698px 0px,
+          $gray__color -6.21682px 6.50777px 0px,
+          $gray__color -6.90009px 5.77831px 0px,
+          $gray__color -7.49825px 4.97757px 0px,
+          $gray__color -8.00394px 4.11545px 0px,
+          $gray__color -8.41092px 3.20258px 0px,
+          $gray__color -8.71416px 2.2502px 0px,
+          $gray__color -8.90993px 1.27008px 0px,
+          $gray__color -8.99582px 0.274291px 0px,
+          $gray__color -8.97076px -0.72488px 0px,
+          $gray__color -8.83507px -1.71511px 0px,
+          $gray__color -8.59041px -2.68419px 0px,
+          $gray__color -8.23981px -3.62017px 0px,
+          $gray__color -7.78758px -4.51149px 0px,
+          $gray__color -7.23931px -5.34718px 0px,
+          $gray__color -6.60176px -6.11692px 0px,
+          $gray__color -5.88279px -6.81122px 0px,
+          $gray__color -5.09127px -7.42152px 0px,
+          $gray__color -4.23696px -7.94029px 0px,
+          $gray__color -3.33039px -8.36113px 0px,
+          $gray__color -2.38275px -8.67885px 0px,
+          $gray__color -1.40572px -8.88954px 0px,
+          $gray__color -0.411357px -8.99059px 0px,
+          $gray__color 0.58808px -8.98077px 0px,
+          $gray__color 1.58026px -8.86018px 0px,
+          $gray__color 2.55296px -8.63032px 0px,
+          $gray__color 3.49417px -8.29402px 0px,
+          $gray__color 4.39229px -7.85543px 0px,
+          $gray__color 5.23623px -7.31996px 0px,
+          $gray__color 6.0156px -6.69422px 0px,
+          $gray__color 6.72078px -5.98591px 0px,
+          $gray__color 7.34307px -5.20378px 0px,
+          $gray__color 7.87479px -4.35748px 0px,
+          $gray__color 8.3094px -3.45743px 0px,
+          $gray__color 8.64153px -2.51474px 0px,
+          $gray__color 8.86709px -1.54104px 0px,
+          $gray__color 8.98328px -0.548328px 0px;
+      }
+    }
+  }
+  &__icon {
+    position: relative;
+    width: 100%;
+    .line {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .lab,
+    .trophy,
+    .bulb,
+    .balloon {
+      position: absolute;
+      content: "";
+    }
+    .trophy {
+      top: 10%;
+      left: 20%;
+    }
+    .lab {
+      left: 15%;
+      top: 50%;
+    }
+    .balloon {
+      top: 10%;
+      right: 20%;
+    }
+    .bulb {
+      right: 17%;
+      top: 60%;
+    }
+  }
+}
